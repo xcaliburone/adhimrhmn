@@ -1,0 +1,177 @@
+/* CSS RESET */
+/* html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; } */
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E2CE1A;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* CONTAINER KIRI */
+
+.container-kiri {
+    width: 304px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    background-color: #36320A;
+    border-radius: 16px 0 0 16px;
+    padding: 148px 0 0 44px;
+}
+
+.container-kiri .image {
+    display: flex;
+    align-items: center;
+    margin-left: -23px;
+}
+
+.container-kiri .image .balok {
+    width: 62px;
+    height: 5px;
+    background: #C4C4C4;
+    transform: rotate(90.021deg);
+}
+
+.container-kiri .image img {
+    width: 157px;
+    height: 91px;
+    margin-left: -32px;
+}
+
+.container-kiri h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 1px 0 0 12px;
+}
+
+.container-kiri h3 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 66px 12px;
+}
+
+.container-kiri p {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 12px 0 0 22px;
+}
+
+.btn {
+    text-transform: uppercase;
+    width: 232px;
+    height: 70px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.btn.kiri {
+    border: 4px solid #FFF;
+    background: transparent;
+}
+
+/* CONTAINER KANAN */
+
+.container-kanan {
+    background-color: #FEFAA1;
+    width: 640px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0 16px 16px 0;
+}
+
+.container-kanan h2 {
+    color: #000;
+    font-size: 32px;
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.container-kanan p {
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    margin: -29px 0 30px 0;
+}
+
+.container-kanan .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.container-kanan .input input {
+    width: 480px;
+    height: 60px;
+    padding-left: 30px;
+
+    border-radius: 16px;
+    border: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+    font-size: 23px;
+    font-weight: 700;
+
+    caret-color: #464402;
+    caret-shape: underscore;
+    
+    background: #E2CE1A;
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-size: 1.1em;
+    background-position: 3%;
+}
+
+.container-kanan .input input::placeholder {
+    color: rgba(0, 0, 0, 0.60);
+    /* color: #36320A !important; */ 
+}
+
+.container-kanan .input input:focus { outline: 0; }
+
+.container-kanan .input input:-webkit-autofill { transition: background-color 5000s ease-in-out 0s; }
+
+.container-kanan .input input#name { background-image: url(./img/name.svg); }
+
+.container-kanan .input input#email { background-image: url(./img/email.svg); }
+
+.container-kanan .input input#pass { background-image: url(./img/password.svg); }
+
+.btn.kanan {
+    margin-top: 10px;
+    border: 0;
+    background: #36320A;
+}
