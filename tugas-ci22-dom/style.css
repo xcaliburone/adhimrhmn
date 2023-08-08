@@ -1,5 +1,5 @@
 /* CSS RESET */
-/* html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,fieldset,
 form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
 header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -16,7 +16,7 @@ body { line-height: 1; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-table { border-collapse: collapse; border-spacing: 0; } */
+table { border-collapse: collapse; border-spacing: 0; }
 
 /* MAIN CSS */
 
@@ -28,15 +28,16 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    background-color: #E2CE1A;
     font-family: 'Poppins', sans-serif;
+    background-color: #E2CE1A;
+    overflow: hidden;
 }
 
 .container {
     display: flex;
     width: 944px;
     height: 555px;
+    margin: 4%;
     border-radius: 16px;
     box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
@@ -46,9 +47,12 @@ body {
 
 .container-kiri {
     width: 304px;
-    background-color: #36320A;
+    height: 555px;
     color: #FFF;
-    padding: 148px 0 0 44px;
+    font-size: 13px;
+    line-height: 1.4;
+    background-color: #36320A;
+    padding: 148px 30px 0 44px;
 }
 
 .container-kiri .image {
@@ -57,11 +61,7 @@ body {
     margin-left: -23px;
 }
 
-.container-kiri .image img {
-    width: 157px;
-    height: 91px;
-    margin-left: -32px;
-}
+.container-kiri .image img { margin-left: -32px; }
 
 .container-kiri .image .balok {
     width: 62px;
@@ -79,7 +79,7 @@ body {
 .container-kiri h3 {
     font-size: 23px;
     font-weight: 500;
-    margin: 0 0 66px 12px;
+    margin: 0 0 34px 12px;
 }
 
 .container-kiri p {
@@ -108,21 +108,22 @@ body {
 /* CONTAINER KANAN */
 
 .container-kanan {
+    width: 640px;
+    height: 555px;
     text-align: center;
     background-color: #FEFAA1;
-    width: 640px;
 }
 
 .container-kanan h2 {
     font-size: 32px;
     font-weight: 900;
-    margin-top: 50px;
+    padding: 50px 0 0 0;
 }
 
 .container-kanan p {
     font-size: 19px;
     font-weight: 600;
-    margin: -29px 0 30px 0;
+    padding: 10px 0 25px 0;
 }
 
 .container-kanan .input {
@@ -141,10 +142,7 @@ body {
     font-weight: 600;
 }
 
-.container-kanan .input input::placeholder {
-    color: rgba(0, 0, 0, 0.60);
-    font-weight: 800;
-}
+.container-kanan .input input::placeholder { color: rgba(0, 0, 0, 0.60); font-weight: 800; }
 
 .container-kanan .input input:hover { cursor: pointer; }
 
@@ -154,85 +152,22 @@ body {
 
 .container-kanan .input img { margin: 0 10px 0 30px; }
 
+.container-kanan .input .username img, .email img, .pass img { width: 20px; }
+
 .container-kanan .input .username, .email, .pass {
     display: flex;
-    flex-direction: row;
-    width: 480px;
+    width: 80%;
     height: 60px;
     background: #E2CE1A;
     border-radius: 16px;
     border: 0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);   
     caret-color: #464402;
-    caret-shape: underscore;
+    overflow: hidden;
 }
 
 .btn.kanan {
     background: #36320A;
     border: 0;
     margin-top: 10px;
-}
-
-/* .container-kanan .input input#username { background-image: url(./img/username.svg); }
-
-.container-kanan .input input#email { background-image: url(./img/email.svg); }
-
-.container-kanan .input input#pass { background-image: url(./img/password.svg); } */
-
-/* Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
-    
-} */
-
-/* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    body {
-        overflow: auto;
-        min-height: 1500px;
-    }
-
-    .container {
-        width: auto;
-        height: calc(450px * 2);
-        display: flex;
-        flex-direction: column;
-        overflow: auto;
-    }
-
-    .container-kiri {
-        padding-bottom: 30px;
-        width: 100%;
-        padding-top: 5%;
-    }
-    
-    .container-kanan {
-        /* width: 100%; */
-        padding-bottom: 63px;
-    }
-
-    .container-kanan .input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-    
-    .container-kanan .input input {
-        background-color: #E2CE1A;
-        border: groove;
-        width: 300px;
-        height: 60px;
-        font-size: 23px;
-        font-weight: 600;
-    }
-
-    .btn {
-        width: 200px;
-        height: 65px;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 19px;
-        border-radius: 30px;
-    }
 }

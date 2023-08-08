@@ -12,7 +12,7 @@
     <!-- icon -->
     <link rel="shortcut icon" href="./img/recoil.png" type="image/x-icon">
     <!-- title website -->
-    <title>Coder - Form2</title>
+    <title>Coder - Form</title>
 </head>
 <body>
 
@@ -39,21 +39,25 @@
             <form class="input" id="input">
                 <div class="username">
                     <img src="./img/username.svg" alt="username">
-                    <input type="name" placeholder="Nome" id="username" required>
+                    <!-- <input type="name" placeholder="Nome" id="username" required autocomplete="additional-name"> -->
+                    <input type="name" placeholder="Nome" id="username">
                 </div>
                 <div class="email">
                     <img src="./img/email.svg" alt="email">
-                    <input type="email" placeholder="Email" id="email" required>
+                    <!-- <input type="email" placeholder="Email" id="email" required autocomplete="email"> -->
+                    <input type="email" placeholder="Email" id="email">
                 </div>
                 <div class="pass">
                     <img src="./img/password.svg" alt="pass">
-                    <input type="password" placeholder="Senha" id="pass" minlength="8" maxlength="12" required>
+                    <!-- <input type="password" placeholder="Senha" id="pass" minlength="8" maxlength="12" required> -->
+                    <input type="password" placeholder="Senha" id="password" minlength="8" maxlength="12">
                 </div>
-                
-                <button class="btn kanan">Cadastrar</button>
+                <button class="btn kanan" id="button-login">log in</button>
             </form>
         </section>
         <!-- /container-kanan -->
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>
