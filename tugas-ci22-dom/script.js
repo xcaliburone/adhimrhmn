@@ -9,11 +9,16 @@ buttonLogin.addEventListener('click', function() {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+
+    const trimUsername = username.trim()
+    const trimEmail = email.trim()
+    const trimPass = password.trim()
+    
     // Periksa apakah salah satu dari field kosong
-    if (username == "" && email == "" && password == "") return alert("Semua data harus diisi sebelum login!");
-    if (username == "") return alert("Nama Pengguna harus diisi sebelum login!");
-    if (email == "") return alert("Email harus diisi sebelum login!");
-    if (password == "") return alert("Password harus diisi sebelum login!");
+    if (trimUsername == "" && trimEmail == "" && trimPass == "") return alert("Semua data harus diisi sebelum login!");
+    if (trimUsername == "") return alert("Nama Pengguna harus diisi sebelum login!");
+    if (trimEmail == "") return alert("Email harus diisi sebelum login!");
+    if (trimPass == "") return alert("Password harus diisi sebelum login!");
     return validasiPass(username);
 });
 
