@@ -1,22 +1,36 @@
 // butuh username, email, phone, id
 
-import Styles from './ContactCard.module.css';
-// import PropTypes from 'prop-types';
-
+import styles from './ContactCard.module.css';
+import profilePic from '../../assets/profilePic.png'
+import trashBin from '../../assets/trashBin.png'
 
 export default function ContactCard() {
 
-    const card = [ 'profil', 'username', 'email', 'telp']
+    // const card = [ 'profil', 'username', 'email', 'telp']
 
     return(
-        <>
-            <div className={Styles.container}>
-                
-                <div className="profil">
-                    {/* <img src={profil} alt="" /> */}
-                </div>
-
+        <div className={styles.container}>     
+            <div className={styles.cards}>
+                <h1>TEST</h1>
+                <Card />
             </div>
-        </>
+        </div>
     );
+}
+
+
+function Card() {
+    return (
+
+        <div className={styles.card}>
+            <img src={profilePic} alt="profile-pic" />
+            <div className={styles.content}>
+                
+            </div>
+            <img src={trashBin} className={styles.trashBin} />
+            {/* <img src={trashBin} className='trashBin' /> */}
+            {/* <button>&times;</button> */}
+        </div>
+
+    )
 }

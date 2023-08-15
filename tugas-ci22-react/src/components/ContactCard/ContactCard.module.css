@@ -5,3 +5,17 @@
     display: flex;
     flex: 1;
 }
+
+.card {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.trashBin {
+    width: 40px;
+    height: 40px;
+}
