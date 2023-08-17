@@ -5,8 +5,8 @@ export default function Form() {
     return(
         <div className={styles.container}>
             <form action="" className={styles.form}>
-
                 <h1>Form Card</h1>
+
                 <div className={styles.input}>
                     <input type="text" placeholder='username' />
                 </div>
@@ -17,8 +17,9 @@ export default function Form() {
                     <input type="tel" placeholder='no. telp' />
                 </div>
                 <p>Masukkan foto profil:</p>
-                <input type="file" id="profileImage" name="profileImage" accept="image/*" required></input>
+                <input type="file" accept="image/*"></input>
 
+                <button>Tambahkan</button>
             </form>
         </div>
     );
