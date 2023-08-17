@@ -1,5 +1,8 @@
 import styles from './Form.module.css'
 
+// user bisa memasukkan nama, email, telp. profil
+// inputan user akan dikirim menjadi card ketika user menekan tombol "tambahkan"
+
 export default function Form() {
 
     return(
