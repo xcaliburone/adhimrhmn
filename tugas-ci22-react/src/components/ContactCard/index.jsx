@@ -17,6 +17,7 @@ export default function ContactCard() {
                 <Card />
                 <Card />
                 <Card />
+                <Card />
             </div>
         </div>
     );
